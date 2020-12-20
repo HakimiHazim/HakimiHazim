@@ -1,0 +1,125 @@
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+</head>
+<body bgcolor="white" text="white" background="beach.jpg">
+<p><embed src="Tricky.MP3"></embed></p>
+<style>
+<!--
+.styling{
+background-color:#d09694;
+color:black;
+font: bold 18px MS Sans Serif;
+padding: 3px;
+}
+-->
+</style>
+<center>
+<span id="digitalclock" class="styling"></span>
+
+<script>
+<!--
+
+/***************
+* LCD Clock script- by Javascriptkit.com
+* Featured on/available at http://www.dynamicdrive.com/
+* This notice must stay intact for use
+***************/
+
+var alternate=0
+
+function show(){
+var clockobj=document.getElementById? document.getElementById("digitalclock") : document.all.digitalclock
+var Digital=new Date()
+var hours=Digital.getHours()
+var minutes=Digital.getMinutes()
+var dn="AM"
+
+if (hours==12) dn="PM" 
+if (hours>12){
+dn="PM"
+hours=hours-12
+}
+if (hours==0) hours=12
+if (hours.toString().length==1)
+hours="0"+hours
+if (minutes<=9)
+minutes="0"+minutes
+
+if (alternate==0)
+clockobj.innerHTML=hours+"<font color='red'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+else
+clockobj.innerHTML=hours+"<font color='pink'> : </font>"+minutes+" "+"<sup>"+dn+"</sup>"
+alternate=(alternate==0)? 1 : 0
+setTimeout("show()",1000)
+}
+window.onload=show
+
+//-->
+</script>
+</center>
+<div id="sfc866z9scd9yfwgdpjehxk72ys4nas3pbq"></div>
+<script type="text/javascript" src="https://counter8.stat.ovh/private/counter.js?c=866z9scd9yfwgdpjehxk72ys4nas3pbq&down=async" async></script>
+<noscript><a href="https://www.freecounterstat.com" title="website hit counter"><img src="https://counter8.stat.ovh/private/freecounterstat.php?c=866z9scd9yfwgdpjehxk72ys4nas3pbq" border="0" title="website hit counter" alt="website hit counter"></a></noscript>
+
+<ul>
+
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="biodata.html">BIODATA</a></li>
+  <li><a href="experience.html">EXPERIENCE</a></li>
+  <li><a href="education.html">EDUCATION</a></li>
+  <li><a href="family.html">FAMILY</a></li>
+  <li><a href="gallery.html">GALLERY</a></li>
+</ul>
+<h1 align="center">WELCOME TO HAKIMI HAZIM'S WEBSITE</h1>
+<p align="center"><img src="dipantai.jpg" width="200" height="220" border="0"></p>
+	<h1><p align="center" id="blink">MAIN HOME PAGE</p></h1>
+	
+<script>
+var blacktime = 500;
+var whitetime = 500;
+//these can be as long as you desire in milliseconds
+settimeout(whitefunc,blacktime);
+function whitefunc(){
+    document.getelementbyid("blink").style.color = "white";
+    settimeout(blackfunc,whitetime);
+}
+function blackfunc(){
+    document.getelementbyid("blink").style.color = "brown";
+    settimeout(whitefunc,blacktime);
+}
+</script>
+	
+<font size="20" color="navy" face="arial"><b>
+<div class="title">
+<h1 color="#fff"><marquee>THIS IS MY PERSONAL WEBSITE. LETS CHECK IT OUT!</marquee></h1>
+</div>
+</body>
+</html>
+
+</body>
+</html>
